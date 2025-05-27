@@ -1,0 +1,206 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #007bff, #00d4ff); /* Fundo gradiente padrão */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4; /* Usado no dashboard e outros */
+    margin: 0;
+}
+
+/* Navbar customizada */
+.navbar-custom {
+    background-color: #A3D8F4; /* Azul claro personalizado */
+}
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link {
+    color: black; /* Letras pretas */
+}
+
+/* Cabeçalho azul (dashboard) */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container geral de formulário ou conteúdo central */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: left;
+}
+
+/* Container específico do dashboard com largura maior */
+.container.dashboard {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Formulários */
+
+/* Agrupamento dos campos */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Rótulos */
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Inputs */
+.input-group input, input, button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Inputs focados */
+.input-group input:focus, input:focus {
+    border-color: #007bff;
+}
+
+/* Botões */
+.btn, button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.btn:hover, button:hover {
+    background: #0056b3;
+}
+
+/* Botões no dashboard */
+.form-group button {
+    width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover no botão do dashboard */
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagens de erro e sucesso */
+.mensagem {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.erro {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    font-weight: bold;
+}
+
+/* Links de ajuda, cadastro e outros */
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a, .link {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.links a:hover, .link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .form-group button {
+        width: 100%;
+    }
+}
+
+/* Estilo específico para o formulário de redefinir senha */
+.container.redefinir-senha {
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Para formulários simples (ex: código e nova senha) */
+input[type="text"], input[type="password"] {
+    margin: 10px 0;
+}
+
+/* Estilo para placeholders e labels no geral já cobertos acima */
+
+/* Ajustes adicionais podem ser feitos conforme o layout */
+
